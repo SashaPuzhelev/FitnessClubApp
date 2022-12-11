@@ -27,7 +27,7 @@
             <PasswordBox x:Name="PasswordBox"></PasswordBox>
             <CheckBox>Показать пароль</CheckBox>
         </StackPanel>
-        <Button Grid.Row="1" Grid.Column="1" Content="Войти" x:Name="ButtonLogin" Click="ButtonLogin_Click"></Button>
-        <Button Grid.Row="1" Grid.Column="2"></Button>
+        <Button Grid.Row="1" Grid.Column="1" Content="Войти" x:Name="ButtonLogin" Click="ButtonLogin_Click" Style="{StaticResource MainButton}"></Button>
+        <Button Grid.Row="1" Grid.Column="2" Style="{StaticResource MainButton}" Content="Отмена"></Button>
     </Grid>
 </Page>
