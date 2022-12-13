@@ -12,10 +12,11 @@
         <StackPanel Width="300">
             <TextBlock Style="{StaticResource HeaderTextBlock}">Вход</TextBlock>
             <TextBlock Style="{StaticResource MainTextBlock}">Логин</TextBlock>
-            <TextBox x:Name="TextBoxLogin"></TextBox>
+            <TextBox x:Name="TextBoxLogin" Style="{StaticResource MainTextBox}"></TextBox>
             <TextBlock Style="{StaticResource MainTextBlock}">Пароль</TextBlock>
             <PasswordBox x:Name="PasswordBox"></PasswordBox>
-            <CheckBox>Показать пароль</CheckBox>
+            <TextBox x:Name="TextBoxPassword" Style="{StaticResource PasswordTextBox}"></TextBox>
+            <CheckBox x:Name="CheckBoxPassword" Style="{StaticResource PasswordCheckBox}">Показать пароль</CheckBox>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
                 <Button  Content="Войти" x:Name="ButtonLogin" Click="ButtonLogin_Click" Style="{StaticResource MainButton}"></Button>
                 <Button  Style="{StaticResource MainButton}" Content="Отмена"></Button>
