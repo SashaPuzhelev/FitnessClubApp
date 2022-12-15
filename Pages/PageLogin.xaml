@@ -16,7 +16,7 @@
             <TextBlock Style="{StaticResource MainTextBlock}">Пароль</TextBlock>
             <PasswordBox x:Name="PasswordBox"></PasswordBox>
             <TextBox x:Name="TextBoxPassword" Style="{StaticResource PasswordTextBox}"></TextBox>
-            <CheckBox x:Name="CheckBoxPassword" Style="{StaticResource PasswordCheckBox}">Показать пароль</CheckBox>
+            <CheckBox x:Name="CheckBoxPassword" Style="{StaticResource PasswordCheckBox}" Unchecked="CheckBoxPassword_Unchecked">Показать пароль</CheckBox>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
                 <Button  Content="Войти" x:Name="ButtonLogin" Click="ButtonLogin_Click" Style="{StaticResource MainButton}"></Button>
                 <Button  Style="{StaticResource MainButton}" Content="Отмена"></Button>

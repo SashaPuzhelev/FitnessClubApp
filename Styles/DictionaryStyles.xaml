@@ -55,9 +55,6 @@
             <DataTrigger Binding="{Binding ElementName=CheckBoxPassword, Path=IsChecked}" Value="False">
                 <Setter Property="Visibility" Value="Collapsed"/>
             </DataTrigger>
-            <DataTrigger Binding="{Binding ElementName=CheckBoxPassword, Path=IsChecked}" Value="True">
-                <Setter Property="Text" Value="{Binding ElementName=PasswordBox, Path=Password}"/>
-            </DataTrigger>
         </Style.Triggers>
     </Style>
 </ResourceDictionary>

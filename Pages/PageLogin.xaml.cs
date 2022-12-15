@@ -18,6 +18,7 @@ namespace FitnessClubApp.Pages
     /// <summary>
     /// Логика взаимодействия для PageEntrance.xaml
     /// </summary>
+    
     public partial class PageLogin : Page
     {
         private static int countTry;
@@ -44,6 +45,10 @@ namespace FitnessClubApp.Pages
                 }
             }
             
+        }
+        private void CheckBoxPassword_Unchecked(object sender, RoutedEventArgs e)
+        {
+            PasswordBox.Password = TextBoxPassword.Text;
         }
     }
 }
