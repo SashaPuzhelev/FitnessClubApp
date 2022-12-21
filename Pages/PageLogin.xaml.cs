@@ -26,7 +26,6 @@ namespace FitnessClubApp.Pages
         {
             InitializeComponent();
         }
-
         private void ButtonLogin_Click(object sender, RoutedEventArgs e)
         {
             countTry++;
@@ -45,6 +44,10 @@ namespace FitnessClubApp.Pages
                 }
             }
             
+        }
+        private void CheckBoxPassword_Checked(object sender, RoutedEventArgs e)
+        {
+            TextBoxPassword.Text = PasswordBox.Password;
         }
         private void CheckBoxPassword_Unchecked(object sender, RoutedEventArgs e)
         {
