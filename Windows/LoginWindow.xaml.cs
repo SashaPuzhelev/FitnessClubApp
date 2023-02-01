@@ -13,29 +13,29 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FitnessClubApp.Pages
+namespace FitnessClubApp.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для PageEntrance.xaml
+    /// Логика взаимодействия для LoginWindow.xaml
     /// </summary>
-    
-    public partial class PageLogin : Page
+    public partial class LoginWindow : Window
     {
-        private static int countTry;
-        public PageLogin()
+        public LoginWindow()
         {
             InitializeComponent();
         }
         private void ButtonLogin_Click(object sender, RoutedEventArgs e)
         {
-            countTry++;
-            for (int i = 0; i< User.GetUsers().Length; i++)
+            //countTry++;
+            for (int i = 0; i < User.GetUsers().Length; i++)
             {
                 if (TextBoxLogin.Text == User.GetUsers()[i].Login)
                 {
                     if (PasswordBox.Password == User.GetUsers()[i].Password)
                     {
-                        NavigationService.Navigate(new PageHome());
+                        var mainWindow = new MainWindow();
+                        mainWindow.Show();
+                        this.Close();
                     }
                     else
                     {
@@ -43,7 +43,7 @@ namespace FitnessClubApp.Pages
                     }
                 }
             }
-            
+
         }
         private void CheckBoxPassword_Checked(object sender, RoutedEventArgs e)
         {

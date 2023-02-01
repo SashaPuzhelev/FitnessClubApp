@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FitnessClubApp"
         mc:Ignorable="d"
-        Title="FitnessClubApp" Height="450" Width="800">
+        Title="FitnessClubApp" Height="450" Width="800" WindowStartupLocation="CenterScreen" MaxWidth="900" MaxHeight="550" MinWidth="700" MinHeight="400">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="70"></RowDefinition>

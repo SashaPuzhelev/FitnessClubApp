@@ -12,7 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using FitnessClubApp.Pages;
 
 namespace FitnessClubApp
 {
@@ -24,7 +23,7 @@ namespace FitnessClubApp
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Content = new PageLogin();
+            //MainFrame.Content = new PageLogin();
         }
     }
 }
